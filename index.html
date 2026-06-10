@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConsciente Noroeste PR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-principal">
+        <h1>AgroConsciente - Noroeste PR</h1>
+        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+    </header>
+
+    <main>
+        <section id="contexto">
+            <h2>A Nossa Realidade</h2>
+            <p>No noroeste do Paraná, a agricultura move a economia das nossas cidades. Porém, a expansão desenfreada muitas vezes acaba engolindo as matas ciliares dos rios e nascentes. Para termos um agro verdadeiramente forte, precisamos garantir que a água e o solo de amanhã não sejam sacrificados pelo lucro de hoje.</p>
+        </section>
+
+        <section id="simulador">
+            <h2>Simulador de Equilíbrio Ambiental</h2>
+            <form id="form-simulador">
+                <label for="nome">Nome do Produtor / Aluno:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Ex: João da Silva">
+
+                <label for="area-total">Área Total da Propriedade (Hectares):</label>
+                <input type="number" id="area-total" name="area-total" required placeholder="Ex: 50" min="1">
+
+                <label for="area-preservada">Área de Preservação / Mata Ciliar (Hectares):</label>
+                <input type="number" id="area-preservada" name="area-preservada" required placeholder="Ex: 10" min="0">
+
+                <button type="submit" id="btn-calcular">Verificar Sustentabilidade</button>
+            </form>
+            
+            <div id="resultado" class="escondido">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Autoral - Concurso Agrinho 2026 | Subcategoria 3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
